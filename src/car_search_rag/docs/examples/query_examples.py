@@ -3,10 +3,11 @@ import sys                                                                      
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
-from car_search_rag.common.sql_session import SqlSession
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from group_project.common.sql_session import SqlSession                                         # 공통 SQL 세션 클래스 가져오기
 from car_search_rag.car_search import query_examples_service
 
-result_logger = logging.getLogger("car_search_rag.results")
+result_logger = logging.getLogger("group_project.results")                                          # 조회한 행을 표시할 별도 로그 이름
 
 
 def main() -> None:                                                                                 # WHERE와 GROUP BY mapper의 실제 DB 실행 예제
