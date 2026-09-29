@@ -6,7 +6,7 @@
 전체 프로그램 구조
 --------------------
 
-.. image:: _static/coffee_search_structure.png
+.. image:: _static/coffee_search_structure.svg
    :alt: Coffee Search 실행, PDF 등록, 질문 검색과 공통 모듈의 연계 구조
    :align: center
    :width: 100%
